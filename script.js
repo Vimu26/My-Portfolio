@@ -17,7 +17,7 @@ const contents = document.querySelectorAll(".content");
 buttons.forEach((button, index) => {
   button.addEventListener("click", () => {
     contents.forEach((content) => (content.style.display = "none"));
-    contents[index].style.display = "block";
+    contents[index].style.display = "flex";
     buttons.forEach((btn) => btn.classList.remove("active"));
     button.classList.add("active");
   });
