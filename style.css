@@ -142,7 +142,7 @@ span {
   opacity: 0;
 }
 
-/* home section */
+/* ==================== Home section ============================ */
 section {
   padding: 90px 8%;
 }
@@ -418,12 +418,16 @@ section {
   font-size: 1.2rem;
 }
 
-/* about section */
+/* ==================== About section ============================ */
+.icons {
+    width: 100px;
+    height: 100px;
+}
 .about {
   display: flex;
-  justify-content: space-between;
+  /* justify-content: space-between; */
   align-items: center;
-  gap: 3rem;
+  gap: 2rem;
 }
 
 .about .about-img {
@@ -514,7 +518,7 @@ section {
 .cvContent {
   margin-top: 1.5rem;
 }
-/* contact section */
+/* ==================== Contact Section ============================ */
 .contactSkills{
     display: flex;
     justify-content: space-between;
@@ -573,9 +577,45 @@ form .btn{
     border: none;
 }
 
-/* ==================== Skills section css code ============================ */
+/* ==================== Skills section ============================ */
 
-.skillBox{
+.skill {
+    margin: 2rem 1rem 2rem 0;
+width:  160px;
+height : 160px;
+/* background: cornflowerblue; */
+position : relative;
+}
+
+.outer{
+    width:  160px;
+    height : 160px;
+    border-radius: 50%;
+    /* border: 1px solid red; */
+    box-shadow:6px 6px 10px -1px rgba(0, 0, 0, 0.5), 
+               -6px -6px 10px -1px rgba(255 , 255  , 255, 0.7);
+    padding : 20px;
+}
+.inner {
+    width:  120px;
+    height : 120px;
+    border-radius: 50%;
+    align-items: center;
+    justify-content: center;
+    /* border: 1px solid red; */
+    box-shadow: inset 4px 4px 6px -1px rgba(0, 0, 0, 0.5),
+                inset -4px -4px 6px -1px rgb(181 181 181 / 70%),
+                -4px -4px 6px -1px rgba(255 , 255  , 255, 1),
+                0.5px 0.5px 0px rgba(255 , 255  , 255, 1.5),
+                0px 12px 10px -10px rgba(0, 0, 0, 0.2);
+}
+.number {
+    font-weight: 600px;
+    color : #070707;
+}
+
+
+/* .skillBox{
     padding: 0 1rem 1rem;
 }
 
@@ -653,7 +693,7 @@ h2.counter span{
 .sk-title{
     font-size: 1rem;
     font-weight: 500;
-}
+} */
 
 /*======================= footer ============================ */
 footer{
