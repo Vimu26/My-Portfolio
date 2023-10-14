@@ -69,7 +69,7 @@ const skill4 = document.getElementById("number2");
 let counter4 = 0 ;
 const ts = "TypeScript"
 setInterval(() => {
-    if(counter2 == 85){
+    if(counter4 == 85){
         clearInterval();
     }
     else {
