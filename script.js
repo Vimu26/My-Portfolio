@@ -65,7 +65,7 @@ number3.innerHTML = counter3 + "%" + `<br><h4>${js}</h4>` ;
   
 },22)
 
-const skill4 = document.getElementById("number2");
+const skill4 = document.getElementById("number4");
 let counter4 = 0 ;
 const ts = "TypeScript"
 setInterval(() => {
