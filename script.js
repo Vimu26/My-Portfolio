@@ -69,7 +69,7 @@ const skill4 = document.getElementById("number4");
 let counter4 = 0 ;
 const ts = "TypeScript"
 setInterval(() => {
-    if(counter2 == 85){
+    if(counter4 == 85){
         clearInterval();
     }
     else {
@@ -77,4 +77,17 @@ setInterval(() => {
 number4.innerHTML = counter4 + "%" + `<br><h4>${ts}</h4>` ;
     }
   
-},22)
+},22);
+const skill5 = document.getElementById("number5");
+let counter5 = 0 ;
+const java = "Java"
+setInterval(() => {
+    if(counter5 == 65){
+        clearInterval();
+    }
+    else {
+          counter5 += 1;
+number5.innerHTML = counter5 + "%" + `<br><h4>${java}</h4>` ;
+    }
+  
+},29)
