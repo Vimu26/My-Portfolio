@@ -105,3 +105,5 @@ document.getElementById("sendMessageBtn").addEventListener("click", function () 
 
     window.location.href = mailtoLink;
   });
+
+  
