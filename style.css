@@ -572,8 +572,14 @@ form .btn {
 
 /* ==================== Skills section ============================ */
 
+.skills {
+  text-align: center;
+}
+
 .skills-div {
   display: flex;
+  align-items: center;
+  flex-direction: column;
   align-items: center;
   justify-content: center;
 }
@@ -629,46 +635,56 @@ form .btn {
 #number1 {
   font-weight: 600;
   color: #070707;
-  text-align: center; /* To center text horizontally */
+  text-align: center; 
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  height: 100%; /* To center text vertically */
+  height: 100%; 
 }
 
 #number2 {
     font-weight: 600;
     color: #070707;
-    text-align: center; /* To center text horizontally */
+    text-align: center; 
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    height: 100%; /* To center text vertically */
+    height: 100%; 
   }
   #number3 {
     font-weight: 600;
     color: #070707;
-    text-align: center; /* To center text horizontally */
+    text-align: center; 
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    height: 100%; /* To center text vertically */
+    height: 100%; 
   }
   #number4 {
     font-weight: 600;
     color: #070707;
-    text-align: center; /* To center text horizontally */
+    text-align: center; 
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    height: 100%; /* To center text vertically */
+    height: 100%; 
+  }
+  #number5 {
+    font-weight: 600;
+    color: #070707;
+    text-align: center; 
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100%; 
   }
 
-circle {
+.c1 {
   fill: none;
   stroke: url(#GradientColor);
   stroke-width: 20px;
@@ -676,6 +692,15 @@ circle {
   stroke-dashoffset: 472;
   animation: anim 2s linear forwards;
 }
+.c2 {
+  fill: none;
+  stroke: url(#GradientColor);
+  stroke-width: 20px;
+  stroke-dasharray: 472;
+  stroke-dashoffset: 472;
+  animation: anim1 2s linear forwards;
+}
+
 svg {
   position: absolute;
   top: 0;
@@ -769,6 +794,12 @@ footer {
   }
 }
 
+@keyframes anim1 {
+  100% {
+    stroke-dashoffset: 200;
+  }
+}
+
 @keyframes rotateText {
   0% {
     transform: rotate(360deg);
@@ -796,7 +827,7 @@ footer {
   }
 }
 
-/*======================= BrakPoints ============================ */
+/*======================= BreakPoints ============================ */
 
 @media (max-width: 1200px) {
   html {
@@ -930,3 +961,32 @@ footer {
     padding: 13px;
   }
 }
+.skills-container {
+  display: flex;
+  gap: 2rem;
+  align-items: center;
+  justify-content: center;
+}
+
+.skills-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 2rem;
+}
+
+.skill {
+  flex: 1;
+}
+
+@media screen and (max-width: 414px) {
+  .skills-container {
+    flex-direction: column; 
+  }
+  .skill {
+    margin-bottom: 20px; 
+  }
+}
+
+
+
+
