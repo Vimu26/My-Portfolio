@@ -90,4 +90,18 @@ setInterval(() => {
 number5.innerHTML = counter5 + "%" + `<br><h4>${java}</h4>` ;
     }
   
-},29)
+},29);
+
+document.getElementById("sendMessageBtn").addEventListener("click", function () {
+    let firstName = document.getElementById("firstName").value;
+    let lastName = document.getElementById("lastName").value;
+    let email = document.getElementById("email").value;
+    let subject = document.getElementById("subject").value;
+    let message = document.getElementById("message").value;
+
+    let mailtoLink = "mailto:akalankavimukthi2@gmail.com";
+    mailtoLink += "?subject=" + encodeURIComponent(subject);
+    mailtoLink += "&body=" + encodeURIComponent( "Dear Akalanka Vimukthi,\n\n" + "I'm" + firstName + " " + lastName + "\n" + "My Email is : " + email + "\n\n" + "Message: " + message);
+
+    window.location.href = mailtoLink;
+  });
