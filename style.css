@@ -917,10 +917,10 @@ footer {
   .home {
     grid-gap: 0;
   }
-  .fillter-buttons button {
+  /* .filter-buttons button {
     padding: 10px;
     font-size: 0.8rem;
-  }
+  } */
 }
 
 @media (max-width: 530px) {
